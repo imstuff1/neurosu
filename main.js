@@ -46,21 +46,21 @@ let animationArray = [];
 
 //Preload assets
 async function preload() {
-  upArrow = loadImage('/assets/arrows/up.png');
-  downArrow = loadImage('/assets/arrows/down.png');
-  leftArrow = loadImage('/assets/arrows/left.png');
-  rightArrow = loadImage('/assets/arrows/right.png');
-  upArrowOutline = loadImage('/assets/arrows/up-outline.png');
-  downArrowOutline = loadImage('/assets/arrows/down-outline.png');
-  leftArrowOutline = loadImage('/assets/arrows/left-outline.png');
-  rightArrowOutline = loadImage('/assets/arrows/right-outline.png');
-  neuro = loadImage('/assets/neuro/neuro.png');
-  neuroMiss = loadImage('/assets/neuro/neuromiss.png');
-  ddr = loadImage('/assets/ddr/ddr.png');
-  ddrUp = loadImage('/assets/ddr/ddr-up.png');
-  ddrDown = loadImage('/assets/ddr/ddr-down.png');
-  ddrLeft = loadImage('/assets/ddr/ddr-left.png');
-  ddrRight = loadImage('/assets/ddr/ddr-right.png');
+  upArrow = loadImage('./assets/arrows/up.png');
+  downArrow = loadImage('./assets/arrows/down.png');
+  leftArrow = loadImage('./assets/arrows/left.png');
+  rightArrow = loadImage('./assets/arrows/right.png');
+  upArrowOutline = loadImage('./assets/arrows/up-outline.png');
+  downArrowOutline = loadImage('./assets/arrows/down-outline.png');
+  leftArrowOutline = loadImage('./assets/arrows/left-outline.png');
+  rightArrowOutline = loadImage('./assets/arrows/right-outline.png');
+  neuro = loadImage('./assets/neuro/neuro.png');
+  neuroMiss = loadImage('./assets/neuro/neuromiss.png');
+  ddr = loadImage('./assets/ddr/ddr.png');
+  ddrUp = loadImage('./assets/ddr/ddr-up.png');
+  ddrDown = loadImage('./assets/ddr/ddr-down.png');
+  ddrLeft = loadImage('./assets/ddr/ddr-left.png');
+  ddrRight = loadImage('./assets/ddr/ddr-right.png');
 
   font = loadFont('./assets/firstcoffee.ttf');
 
@@ -203,27 +203,27 @@ function mouseClicked() {
   if (currentState === GAMESTATE.MENU) {
     audioElements['miss'] = $('<audio>', {
       controls: false,
-      src: '/assets/miss.mp3',
+      src: './assets/miss.mp3',
       type: 'audio/mp3',
     });
     audioElements['hit'] = $('<audio>', {
       controls: false,
-      src: '/assets/hit.mp3',
+      src: './assets/hit.mp3',
       type: 'audio/mp3',
     });
     audioElements['song1'] = $('<audio>', {
       controls: false,
-      src: '/beatmaps/712959 Dan Salvato - Your Reality/audio.mp3',
+      src: './beatmaps/712959 Dan Salvato - Your Reality/audio.mp3',
       type: 'audio/mp3',
     });
     audioElements['song2'] = $('<audio>', {
       controls: false,
-      src: '/beatmaps/883669 ODDEEO + Karma Wears White Ties - Chinatown Blues [feat. Megpoid Gumi]/audio.mp3',
+      src: './beatmaps/883669 ODDEEO + Karma Wears White Ties - Chinatown Blues [feat. Megpoid Gumi]/audio.mp3',
       type: 'audio/mp3',
     });
     audioElements['song3'] = $('<audio>', {
       controls: false,
-      src: '/beatmaps/2295850 Neuro-sama - LIFE/audio.mp3',
+      src: './beatmaps/2295850 Neuro-sama - LIFE/audio.mp3',
       type: 'audio/mp3',
     });
     for (const i in audioElements) {
