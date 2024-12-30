@@ -1,7 +1,7 @@
-#Neurosu: Neuro Punch Revolution!
+# Neurosu: Neuro Punch Revolution!
 imstuff1.github.io/neurosu
 
-##Credits
+## Credits
 Programming & Art: 
 theschlingus
 
