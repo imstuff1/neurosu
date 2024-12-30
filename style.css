@@ -1,0 +1,13 @@
+html,
+body {
+	/*50x54*/
+	cursor: url("./assets/cursor.png") 25 27, auto;
+	margin: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+/* Accent */
+/* rgb(247, 134, 181) */
